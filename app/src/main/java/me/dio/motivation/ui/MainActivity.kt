@@ -88,7 +88,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun showUserName() {
         val name = securityPreferences.getStoredString(MotivationConstants.KEY.USER_NAME)
-        binding.textUserName.text = "Olá, $name!"
+        val hello = getString(R.string.hello)
+        binding.textUserName.text = "$hello, $name!"
     }
 
     private fun handleFilter(id: Int) {
